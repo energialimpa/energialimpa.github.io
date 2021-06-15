@@ -1,0 +1,207 @@
+html,body {
+    margin: 0 ;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: Roboto, 'Open Sans', Arial, sans-serif;
+}
+
+/* --------  Header  -------- */
+
+header {
+    background-color: rgb(29, 6, 83);
+    color: white;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+#logo {
+    width: 96px;
+    position: absolute;
+    top: 10px;
+    margin-left: 5%;
+    float: left;
+}
+#logo img{
+    max-height: 100%;
+  }
+#menu{
+    float: right;
+    margin-right: 5%;
+    list-style: none;
+    margin-top: 0px;
+}
+li{
+    float: left;
+    font-size: 16px;
+    padding: 20 10 20 10;
+}
+li a {
+    color: initial;
+    text-decoration: initial;
+    color: white;
+}
+
+li:hover{
+    background-color: #3dbceb;
+}
+
+/* --------  Capa  -------- */
+
+figure {
+    margin: 0 auto;
+}
+#home_img0 {
+    background: url("img0.jpg");
+    height: 100% ;
+    text-align: center;
+    background-size: cover;
+}
+#titulo {
+    color:  #FFA900;
+    text-shadow: -5px 5px 5px rgb(0, 0, 0);
+    padding-top: 20% ;
+    font-size: 70px ;
+        
+}
+#subtitulo {
+    color:  #FFA900;
+    text-shadow: -5px 5px 5px black, 5px 5px 5px black, 5px 5px 5px black, 5px 5px 5px black, 5px 5px 5px black;
+    padding-left: 20% ;
+    padding-right: 20% ;
+    
+}
+#acao {
+    color: blue;
+    border: 1px blue solid;
+    padding: 10px  20px  10px  20px;
+    
+}
+
+.icone {
+    width: 51px;
+}
+
+section {
+    padding: 20px;
+    float: left;
+}
+
+.destaque {
+    background-color: #F0F8FF;
+}
+.imgeco {
+    width: 90%;
+    height: 30% ;
+}
+
+/* --------  Colunas  -------- */
+
+.coluna {
+    float: left;
+    padding: 0 5%;
+    position: relative;
+}
+.dois {
+    width: 40%;
+}
+.quatro {
+    width: 15%;
+}
+.tres {
+    width: 29%;
+    padding: 0  2%;
+}
+
+.coluna .icone img{
+    max-width: 60%;
+    max-height: 60%;
+    margin: 15px;
+}
+
+.coluna:hover > .icone {
+    background: lightblue;
+}
+
+
+/* --------  Textos  -------- */
+
+h3 {
+    text-align: center;
+    font-size: 35px;
+}
+
+h4 {
+    font-family: 'Roboto Slab', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.esquerda {
+  text-align: left;
+}
+.direita {
+  text-align: right;
+}
+.justificado{
+    text-align: justify;
+}
+.centralizado {
+    text-align: center;
+}
+
+/* --------  Footer  -------- */
+
+ footer {
+    background-color: #21066b;
+    float: left;
+    width: 100% ;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 30px 0 50px 0;
+    color: white;
+    }
+footer .container {
+  padding: 30px 0 50px 0;
+}
+
+#simbolo {
+    width:400px;
+    position: absolute;
+    left: 10px;
+    margin-left: 20%;
+    float: left;
+    
+}
+#simbolo img{
+    max-height: 100%;
+  }
+/* --------  Responsividade  --------*/
+
+@media all and (max-width: 768px) {
+
+    #menu {
+        visibility: hidden;
+    }
+    .coluna, .dois, .tres, .quatro {
+      display: block;
+      width: 80%;
+      padding: 0;
+      margin: 10px auto;
+      float: none;
+    }
+    #logodiv {
+      position: relative;
+      width: 100%;
+      text-align: center;
+    }
+    #logo{
+      margin-left: 0px;
+      transform: translateX(-50%)
+    }
+    
+    #simbolodiv {
+      visibility: hidden;
+    }  
+}
